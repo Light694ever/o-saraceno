@@ -353,17 +353,21 @@ body {
 
 @media (max-width: 768px) {
     .footer {
-        padding: 3rem 1.5rem 1.5rem;
+        padding: 5rem 1.5rem 1.5rem;
         margin-top: 4rem;
     }
 
     .footer::before {
-        display: none;
+        top: 1rem;
+        left: 1.5rem;
+        width: 70px;
+        height: 70px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        margin-left: 0;
     }
 
     .footer-section {
@@ -411,12 +415,15 @@ body {
 
 @media (max-width: 480px) {
     .footer {
-        padding: 2rem 1rem 1rem;
+        padding: 4.5rem 1rem 1rem;
         margin-top: 3rem;
     }
 
     .footer::before {
-        display: none;
+        top: 0.75rem;
+        left: 1rem;
+        width: 60px;
+        height: 60px;
     }
 
     .footer-content {

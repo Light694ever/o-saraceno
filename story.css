@@ -155,79 +155,101 @@
 
 /* Mobile Timeline */
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 30px;
-    }
-
-    .timeline-item {
-        flex-direction: column !important;
-        margin-bottom: 2.5rem;
-        gap: 1rem;
-    }
-
-    .timeline-content {
-        width: calc(100% - 80px);
-        margin-left: 80px;
-        text-align: left !important;
-        padding: 1.5rem;
-    }
-
-    .timeline-img {
-        width: calc(100% - 80px);
-        margin-left: 80px;
-        height: 250px;
-        order: -1;
-        flex-shrink: 0;
-    }
-
-    .timeline-item::after {
-        left: 30px;
-    }
-
-    .timeline-content h3 {
-        font-size: 1.1rem;
-    }
-
-    .timeline-content p {
-        font-size: 0.9rem;
+    .story-hero {
+        padding: 3rem 1.5rem;
+        min-height: 320px;
     }
 
     .story-hero-content h1 {
         font-size: 2rem;
+        margin-bottom: 0.75rem;
     }
 
     .story-hero-content p {
         font-size: 1rem;
     }
-}
-
-@media (max-width: 480px) {
-    .story-hero {
-        padding: 2.5rem 1rem;
-        min-height: 280px;
-    }
-
-    .story-hero-content h1 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .story-hero-content p {
-        font-size: 0.9rem;
-    }
 
     .timeline-section {
-        padding: 2.5rem 1rem;
+        padding: 3rem 1.5rem;
     }
 
     .timeline::before {
-        left: 20px;
+        left: 25px;
+        width: 3px;
     }
 
     .timeline-item {
         flex-direction: column !important;
         margin-bottom: 2rem;
-        gap: 1rem;
+        gap: 1.2rem;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        justify-content: flex-start;
+    }
+
+    .timeline-content {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+        margin-right: 0;
+        text-align: left !important;
+        padding: 1.5rem;
+        order: 2;
+    }
+
+    .timeline-img {
+        width: calc(100% - 70px);
+        margin-left: 70px;
+        margin-right: 0;
+        height: 200px;
+        order: 1;
+        flex-shrink: 0;
+    }
+
+    .timeline-item::after {
+        left: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-hero {
+        padding: 2rem 1rem;
+        min-height: 260px;
+    }
+
+    .story-hero-content h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .story-hero-content p {
+        font-size: 0.85rem;
+    }
+
+    .timeline-section {
+        padding: 2rem 1rem;
+    }
+
+    .timeline::before {
+        left: 15px;
+        width: 2px;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        margin-bottom: 1.8rem;
+        gap: 0.8rem;
     }
 
     .timeline-item.left .timeline-content,
@@ -235,39 +257,50 @@
         max-width: 100%;
         text-align: left !important;
         order: 2 !important;
-        margin: 0 !important;
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        margin-right: 0;
+        padding: 1.2rem;
     }
 
     .timeline-item.left .timeline-img,
     .timeline-item.right .timeline-img {
         max-width: 100%;
-        margin: 0 !important;
         order: 1 !important;
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        margin-right: 0;
+        height: 160px;
     }
 
     .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px;
+        width: calc(100% - 50px);
+        margin-left: 50px;
         padding: 1.2rem;
     }
 
     .timeline-content h3 {
         font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .timeline-content p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
     }
 
     .timeline-img {
-        width: calc(100% - 60px);
-        margin-left: 60px;
-        height: 200px;
+        width: calc(100% - 50px);
+        margin-left: 50px;
+        height: 160px;
         flex-shrink: 0;
     }
 
     .timeline-item::after {
-        left: 8px;
+        left: 15px;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
     }
 }
 
