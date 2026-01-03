@@ -263,6 +263,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .contact-hero {
+        padding: 4rem 1.5rem;
+        min-height: 350px;
+    }
+
     .contact-hero-content h1 {
         font-size: 2rem;
     }
@@ -273,6 +278,11 @@
 
     .contact-main {
         padding: 3rem 1rem;
+    }
+
+    .contact-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
     }
 
     .contact-hours-section,
@@ -292,28 +302,90 @@
 
 @media (max-width: 480px) {
     .contact-hero {
-        padding: 4rem 1rem;
-        min-height: 300px;
+        padding: 2.5rem 1rem;
+        min-height: 280px;
     }
 
     .contact-hero-content h1 {
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .contact-main {
+        padding: 2.5rem 1rem;
     }
 
     .contact-cards {
+        grid-template-columns: 1fr;
         gap: 1rem;
+        margin-bottom: 2rem;
     }
 
-    .contact-socials {
-        gap: 1rem;
+    .contact-card {
+        padding: 1.5rem;
+        text-align: left;
     }
 
-    .contact-social-btn {
-        min-width: 120px;
+    .contact-card-icon {
+        font-size: 2.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-card p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-section {
+        padding: 2rem 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    .contact-hours-section,
+    .contact-social-section,
+    .contact-cta {
         padding: 1.5rem 1rem;
     }
 
+    .contact-hours-section h3,
+    .contact-social-section h3,
+    .contact-cta h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-socials {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-social-btn {
+        min-width: 110px;
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
     .contact-social-btn .icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .whatsapp-cta {
+        width: 100%;
+        max-width: 250px;
     }
 }
+
