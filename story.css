@@ -1,0 +1,234 @@
+/* Story Page Hero */
+.story-hero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.story-hero-content p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    top: 0;
+    z-index: 1;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3rem;
+    position: relative;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.timeline-item.left {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.timeline-item.left .timeline-content {
+    order: 2;
+    text-align: left;
+    margin-left: auto;
+    max-width: 45%;
+}
+
+.timeline-item.left .timeline-img {
+    order: 1;
+    margin-right: auto;
+    max-width: 45%;
+}
+
+.timeline-item.right {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.timeline-item.right .timeline-content {
+    order: 1;
+    text-align: right;
+    margin-right: auto;
+    max-width: 45%;
+}
+
+.timeline-item.right .timeline-img {
+    order: 2;
+    margin-left: auto;
+    max-width: 45%;
+}
+
+.timeline-content {
+    width: 45%;
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(27, 73, 101, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(27, 73, 101, 0.15);
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.timeline-img {
+    width: 45%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(27, 73, 101, 0.2);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.timeline-img:hover {
+    transform: scale(1.03);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--primary-color);
+    top: 50%;
+    margin-top: -10px;
+    z-index: 10;
+}
+
+/* Mobile Timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        margin-bottom: 2.5rem;
+        gap: 1rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        text-align: left !important;
+        padding: 1.5rem;
+    }
+
+    .timeline-img {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+        height: 250px;
+        order: -1;
+        flex-shrink: 0;
+    }
+
+    .timeline-item::after {
+        left: 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+
+    .story-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .story-hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-section {
+        padding: 3rem 1rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        padding: 1.2rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.85rem;
+    }
+
+    .timeline-img {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .story-hero {
+        padding: 4rem 1rem;
+        min-height: 300px;
+    }
+}

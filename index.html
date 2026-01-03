@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Saraceno - Pizzeria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header e Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="O'Saraceno Logo" class="logo-img">
+                    <span class="logo-text">O'Saraceno</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="#home" data-i18n="nav_home">Home</a>
+                    <a href="story.html" data-i18n="nav_story">La Nostra Storia</a>
+                    <a href="menu.html" data-i18n="nav_menu">Menu</a>
+                    <a href="contact.html" data-i18n="nav_contact">Contatti</a>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="it">IT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Benvenuto da O'Saraceno</h1>
+            <p data-i18n="hero_subtitle">Autenticità e Tradizione dal 1979</p>
+            <button class="cta-btn" data-i18n="hero_btn">Scopri il Menu</button>
+        </div>
+    </section>
+
+    <!-- Storia Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <h2 data-i18n="story_title">La Nostra Storia</h2>
+            <div class="story-content">
+                <img src="images/logo.png" alt="O'Saraceno" class="story-img">
+                <div class="story-text">
+                    <p data-i18n="story_p1">Dal 1979, O'Saraceno è un punto di riferimento per gli amanti della vera pizza a Lignano Sabbiadoro.</p>
+                    <p data-i18n="story_p2">Con ingredienti selezionati e ricette tramandatate nel tempo, offriamo un'esperienza autentica della tradizione italiana.</p>
+                    <p data-i18n="story_p3">Situati nel cuore di Lignano Sabbiadoro (UD), accogliamo ospiti da tutto il mondo per condividere la nostra passione per la pizza.</p>
+                    <a href="story.html" class="story-btn" data-i18n="story_btn">Scopri la Nostra Storia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 data-i18n="menu_title">Il Nostro Menu</h2>
+            <div class="menu-grid">
+                <a href="menu.html" class="menu-item">
+                    <h3 data-i18n="menu_margherita">Margherita</h3>
+                    <p data-i18n="menu_margherita_desc">Pomodoro, mozzarella, basilico</p>
+                </a>
+                <a href="menu.html" class="menu-item">
+                    <h3 data-i18n="menu_diavola">Diavola</h3>
+                    <p data-i18n="menu_diavola_desc">Pomodoro, mozzarella, peperoni piccanti</p>
+                </a>
+                <a href="menu.html" class="menu-item">
+                    <h3 data-i18n="menu_quattroformaggi">Quattro Formaggi</h3>
+                    <p data-i18n="menu_quattroformaggi_desc">Mozzarella, gorgonzola, parmigiano, ricotta</p>
+                </a>
+                <a href="menu.html" class="menu-item">
+                    <h3 data-i18n="menu_prosciutto">Prosciutto e Rucola</h3>
+                    <p data-i18n="menu_prosciutto_desc">Pomodoro, mozzarella, prosciutto, rucola fresca</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-i18n="contact_title">Contatti</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 data-i18n="contact_address">Indirizzo</h3>
+                    <p><a href="https://maps.google.com/?q=Via+Timavo+39+41+Lignano+Sabbiadoro" target="_blank">Via Timavo, 39/41<br>33054 Lignano Sabbiadoro (UD)</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3 data-i18n="contact_phone">Telefono</h3>
+                    <p><a href="tel:+390431730011">+39 0431 73011</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3 data-i18n="contact_email">Email</h3>
+                    <p><a href="mailto:info@osaraceno.it">info@osaraceno.it</a></p>
+                </div>
+            </div>
+
+            <div class="opening-hours">
+                <h3 data-i18n="contact_hours">Orari di Apertura</h3>
+                <p data-i18n="contact_season">Da Pasqua a fine Settembre</p>
+                <p data-i18n="contact_days">Tutti i giorni dalle 11:00 alle 22:00</p>
+            </div>
+
+            <div class="social-links">
+                <h3 data-i18n="contact_follow">Seguici</h3>
+                <div class="socials">
+                    <a href="https://www.facebook.com/saracenolignano/?locale=it_IT" target="_blank" class="social-btn facebook" aria-label="Facebook" title="Seguici su Facebook">f</a>
+                    <a href="https://www.instagram.com/osaraceno/?igsh=MXdrZjVtYWFlMDRrdw%3D%3D" target="_blank" class="social-btn instagram" aria-label="Instagram" title="Seguici su Instagram">@</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <p>Autentica pizza dal 1979</p>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.75); margin-top: 0.5rem; margin-bottom: 0;">Via Timavo, 39/41<br>33054 Lignano Sabbiadoro (UD)</p>
+                <p class="vat-info">P.IVA: 01407810306</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_info">Menu</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                    <li><a href="story.html" data-i18n="footer_about">Chi Siamo</a></li>
+                    <li><a href="menu.html" data-i18n="footer_menu">Menu</a></li>
+                    <li><a href="#contact" data-i18n="footer_contact">Contatti</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_legal">Legal</h4>
+                <ul>
+                    <li><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html" data-i18n="footer_cookies">Cookie Policy</a></li>
+                    <li><a href="terms.html" data-i18n="footer_terms">Termini di Servizio</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_follow">Contattaci</h4>
+                <p>
+                    <strong>📞 Telefono</strong>
+                    <a href="tel:+390431730011">+39 0431 73011</a>
+                </p>
+                <p>
+                    <strong>✉️ Email</strong>
+                    <a href="mailto:info@osaraceno.it">info@osaraceno.it</a>
+                </p>
+                <p style="margin-top: 1.2rem;">
+                    <strong style="display: block; margin-bottom: 0.8rem;">Seguici</strong>
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/saracenolignano/?locale=it_IT" target="_blank" class="footer-social-btn" aria-label="Facebook">f</a>
+                    <a href="https://www.instagram.com/osaraceno/?igsh=MXdrZjVtYWFlMDRrdw%3D%3D" target="_blank" class="footer-social-btn" aria-label="Instagram">@</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright"></p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3 data-i18n="cookie_title">Gestione Cookie</h3>
+                <p data-i18n="cookie_description">Utilizziamo i cookie per migliorare la vostra esperienza. Accettando, acconsentirete al nostro utilizzo di cookie.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookieReject" class="cookie-btn reject" data-i18n="cookie_reject">Rifiuta</button>
+                <button id="cookieAccept" class="cookie-btn accept" data-i18n="cookie_accept">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/390431730011?text=Ciao%20O%27Saraceno%2C%20vorrei%20informazioni" target="_blank" class="whatsapp-btn" aria-label="WhatsApp" title="Contattaci su WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="translations.js"></script>
+    <script src="common.js"></script>
+    <script src="cookies.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

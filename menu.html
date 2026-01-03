@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - O'Saraceno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header e Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="O'Saraceno Logo" class="logo-img">
+                    <span class="logo-text">O'Saraceno</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html" data-i18n="nav_home">Home</a>
+                    <a href="story.html" data-i18n="nav_story">La Nostra Storia</a>
+                    <a href="menu.html" data-i18n="nav_menu">Menu</a>
+                    <a href="index.html#contact" data-i18n="nav_contact">Contatti</a>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="it">IT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1 data-i18n="menu_page_title">Il Nostro Menu</h1>
+            <p data-i18n="menu_page_subtitle">Autentica cucina italiana nel cuore di Lignano</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-nav-section">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="pizze">🍕 Pizze</button>
+                <button class="category-btn" data-category="primi-carne">🍝 Primi Carne</button>
+                <button class="category-btn" data-category="primi-pesce">🦐 Primi Pesce</button>
+                <button class="category-btn" data-category="secondi-carne">🥩 Secondi Carne</button>
+                <button class="category-btn" data-category="secondi-pesce">🐟 Secondi Pesce</button>
+                <button class="category-btn" data-category="dolci">🍰 Dolci</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-content-section">
+        <div class="container">
+
+            <!-- PIZZE -->
+            <div class="menu-category active" id="pizze">
+                <h2 data-i18n="menu_pizze_title">Pizze</h2>
+
+                <!-- Pizze Classiche -->
+                <div class="menu-subcategory">
+                    <h3 data-i18n="menu_pizze_classic">Pizze Classiche</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Margherita</h4>
+                                <span class="price">€ 8.50</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, mozzarella, basilico fresco</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Diavola</h4>
+                                <span class="price">€ 9.50</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, mozzarella, peperoni piccanti</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Quattro Formaggi</h4>
+                                <span class="price">€ 10.50</span>
+                            </div>
+                            <p class="menu-card-desc">Mozzarella, gorgonzola, parmigiano, ricotta</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Prosciutto e Rucola</h4>
+                                <span class="price">€ 10.00</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, mozzarella, prosciutto, rucola fresca</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizze Speciali -->
+                <div class="menu-subcategory">
+                    <h3 data-i18n="menu_pizze_special">Pizze Speciali</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Carnivora</h4>
+                                <span class="price">€ 12.00</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, mozzarella, speck, salsiccia, guanciale</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Frutti di Mare</h4>
+                                <span class="price">€ 13.50</span>
+                            </div>
+                            <p class="menu-card-desc">Vongole, cozze, calamari, gamberetti, aglio</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Ai Formaggi e Miele</h4>
+                                <span class="price">€ 11.00</span>
+                            </div>
+                            <p class="menu-card-desc">Mozzarella, gorgonzola, ricotta, miele di castagno</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Vegetariana</h4>
+                                <span class="price">€ 10.00</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, mozzarella, verdure miste, basilico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizze Vegan -->
+                <div class="menu-subcategory">
+                    <h3 data-i18n="menu_pizze_vegan">Pizze Vegan</h3>
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Vegan Nature</h4>
+                                <span class="price">€ 9.50</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, tofu, verdure grigliate, basilico</p>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-header">
+                                <h4>Vegan Deluxe</h4>
+                                <span class="price">€ 11.00</span>
+                            </div>
+                            <p class="menu-card-desc">Pomodoro, formaggio vegan, tempeh affumicato, olive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRIMI DI CARNE -->
+            <div class="menu-category" id="primi-carne">
+                <h2 data-i18n="menu_primi_carne_title">Primi Piatti di Carne</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Spaghetti alla Carbonara</h4>
+                            <span class="price">€ 11.00</span>
+                        </div>
+                        <p class="menu-card-desc">Guanciale, uova, pecorino, pepe nero</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Tagliatelle al Ragù</h4>
+                            <span class="price">€ 12.00</span>
+                        </div>
+                        <p class="menu-card-desc">Ragù di carne bolognese, parmigiano</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Lasagna della Nonna</h4>
+                            <span class="price">€ 12.50</span>
+                        </div>
+                        <p class="menu-card-desc">Ragù, besciamella, parmigiano</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Pappardelle con Cinghiale</h4>
+                            <span class="price">€ 13.00</span>
+                        </div>
+                        <p class="menu-card-desc">Ragù di cinghiale, parmigiano</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRIMI DI PESCE -->
+            <div class="menu-category" id="primi-pesce">
+                <h2 data-i18n="menu_primi_pesce_title">Primi Piatti di Pesce</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Spaghetti alle Vongole</h4>
+                            <span class="price">€ 13.50</span>
+                        </div>
+                        <p class="menu-card-desc">Vongole veraci, aglio, prezzemolo</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Linguine ai Frutti di Mare</h4>
+                            <span class="price">€ 14.00</span>
+                        </div>
+                        <p class="menu-card-desc">Vongole, cozze, calamari, gamberetti</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Risotto ai Frutti di Mare</h4>
+                            <span class="price">€ 14.50</span>
+                        </div>
+                        <p class="menu-card-desc">Riso carnaroli, frutti di mare, brodo di pesce</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Pappardelle al Pesce Spada</h4>
+                            <span class="price">€ 14.00</span>
+                        </div>
+                        <p class="menu-card-desc">Pesce spada, limone, prezzemolo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECONDI DI CARNE -->
+            <div class="menu-category" id="secondi-carne">
+                <h2 data-i18n="menu_secondi_carne_title">Secondi Piatti di Carne</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Bistecca alla Griglia</h4>
+                            <span class="price">€ 18.00</span>
+                        </div>
+                        <p class="menu-card-desc">Carne di manzo, sale, olio</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Ossobuco in Umido</h4>
+                            <span class="price">€ 16.00</span>
+                        </div>
+                        <p class="menu-card-desc">Ossobuco di vitello, vino bianco, verdure</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Saltimbocca alla Romana</h4>
+                            <span class="price">€ 15.00</span>
+                        </div>
+                        <p class="menu-card-desc">Vitello, prosciutto, salvia, vino bianco</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Pollastra al Forno</h4>
+                            <span class="price">€ 13.50</span>
+                        </div>
+                        <p class="menu-card-desc">Pollastra, limone, erbe aromatiche</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECONDI DI PESCE -->
+            <div class="menu-category" id="secondi-pesce">
+                <h2 data-i18n="menu_secondi_pesce_title">Secondi Piatti di Pesce</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Branzino al Forno</h4>
+                            <span class="price">€ 16.00</span>
+                        </div>
+                        <p class="menu-card-desc">Branzino intero, limone, erbe aromatiche</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Orata Fritta</h4>
+                            <span class="price">€ 15.50</span>
+                        </div>
+                        <p class="menu-card-desc">Orata, sale, limone</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Calamari alla Griglia</h4>
+                            <span class="price">€ 14.00</span>
+                        </div>
+                        <p class="menu-card-desc">Calamari, aglio, prezzemolo, limone</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Gamberoni all'Americana</h4>
+                            <span class="price">€ 17.00</span>
+                        </div>
+                        <p class="menu-card-desc">Gamberoni, aglio, pomodoro, peperoncino</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOLCI -->
+            <div class="menu-category" id="dolci">
+                <h2 data-i18n="menu_dolci_title">Dolci</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Tiramisu</h4>
+                            <span class="price">€ 6.50</span>
+                        </div>
+                        <p class="menu-card-desc">Mascarpone, caffè, cacao</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Panna Cotta</h4>
+                            <span class="price">€ 6.00</span>
+                        </div>
+                        <p class="menu-card-desc">Panna, frutta di stagione</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Zabaione</h4>
+                            <span class="price">€ 5.50</span>
+                        </div>
+                        <p class="menu-card-desc">Uova, zucchero, marsala</p>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-header">
+                            <h4>Spumone</h4>
+                            <span class="price">€ 5.00</span>
+                        </div>
+                        <p class="menu-card-desc">Gelato misto, panna montata</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <p>Autentica pizza dal 1979</p>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.75); margin-top: 0.5rem; margin-bottom: 0;">Via Timavo, 39/41<br>33054 Lignano Sabbiadoro (UD)</p>
+                <p class="vat-info">P.IVA: 01407810306</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_info">Menu</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="story.html" data-i18n="footer_about">Chi Siamo</a></li>
+                    <li><a href="menu.html" data-i18n="footer_menu">Menu</a></li>
+                    <li><a href="index.html#contact" data-i18n="footer_contact">Contatti</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_legal">Legal</h4>
+                <ul>
+                    <li><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html" data-i18n="footer_cookies">Cookie Policy</a></li>
+                    <li><a href="terms.html" data-i18n="footer_terms">Termini di Servizio</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div class="footer-section">
+                <h4 data-i18n="footer_follow">Contattaci</h4>
+                <p>
+                    <strong>📞 Telefono</strong>
+                    <a href="tel:+390431730011">+39 0431 73011</a>
+                </p>
+                <p>
+                    <strong>✉️ Email</strong>
+                    <a href="mailto:info@osaraceno.it">info@osaraceno.it</a>
+                </p>
+                <p style="margin-top: 1.2rem;">
+                    <strong style="display: block; margin-bottom: 0.8rem;">Seguici</strong>
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/saracenolignano/?locale=it_IT" target="_blank" class="footer-social-btn" aria-label="Facebook">f</a>
+                    <a href="https://www.instagram.com/osaraceno/?igsh=MXdrZjVtYWFlMDRrdw%3D%3D" target="_blank" class="footer-social-btn" aria-label="Instagram">@</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright"></p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3 data-i18n="cookie_title">Gestione Cookie</h3>
+                <p data-i18n="cookie_description">Utilizziamo i cookie per migliorare la vostra esperienza. Accettando, acconsentirete al nostro utilizzo di cookie.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookieReject" class="cookie-btn reject" data-i18n="cookie_reject">Rifiuta</button>
+                <button id="cookieAccept" class="cookie-btn accept" data-i18n="cookie_accept">Accetta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/390431730011?text=Ciao%20O%27Saraceno%2C%20vorrei%20informazioni" target="_blank" class="whatsapp-btn" aria-label="WhatsApp" title="Contattaci su WhatsApp">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="translations.js"></script>
+    <script src="common.js"></script>
+    <script src="cookies.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/hero.jpg') center/cover no-repeat;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contact-hero-content p {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+/* Contact Main */
+.contact-main {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.contact-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(245, 235, 224, 0.8) 100%);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(27, 73, 101, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(27, 73, 101, 0.15);
+}
+
+.contact-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card-note {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-top: 1rem !important;
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.contact-card a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: var(--primary-color);
+}
+
+/* Opening Hours Section */
+.contact-hours-section {
+    background-color: var(--accent-color);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.contact-hours-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hours-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.hours-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(27, 73, 101, 0.1);
+}
+
+.hours-box h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hours-box p {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Social Section */
+.contact-social-section {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-social-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-social-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-social-btn.facebook {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(27, 73, 101, 0.3);
+}
+
+.contact-social-btn.facebook:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(42, 127, 98, 0.5);
+}
+
+.contact-social-btn.instagram {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
+.contact-social-btn.instagram:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(225, 48, 108, 0.5);
+}
+
+.contact-social-btn .icon {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-social-btn .label {
+    font-size: 1rem;
+}
+
+/* CTA Section */
+.contact-cta {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #1f6b4f 100%);
+    color: white;
+    padding: 4rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(42, 127, 98, 0.3);
+}
+
+.contact-cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.whatsapp-cta {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-cta:hover {
+    background-color: #1faa34;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero-content p {
+        font-size: 1rem;
+    }
+
+    .contact-main {
+        padding: 3rem 1rem;
+    }
+
+    .contact-hours-section,
+    .contact-social-section,
+    .contact-cta {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-cta h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero {
+        padding: 4rem 1rem;
+        min-height: 300px;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-cards {
+        gap: 1rem;
+    }
+
+    .contact-socials {
+        gap: 1rem;
+    }
+
+    .contact-social-btn {
+        min-width: 120px;
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-social-btn .icon {
+        font-size: 2rem;
+    }
+}
