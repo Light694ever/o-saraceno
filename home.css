@@ -13,34 +13,45 @@
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    background: linear-gradient(135deg, #FFD700 0%, var(--accent-color) 50%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.5));
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
+    margin-bottom: 2.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+    font-style: italic;
 }
 
 .cta-btn {
-    background-color: var(--accent-color);
+    background: linear-gradient(135deg, var(--accent-color) 0%, #f5d5b0 100%);
     color: var(--primary-color);
     border: none;
-    padding: 1rem 2rem;
+    padding: 1.1rem 2.5rem;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.5px;
 }
 
 .cta-btn:hover {
-    background-color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, white 0%, #faf5f0 100%);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 /* Story Section */
@@ -95,12 +106,34 @@ h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
+    border-radius: 2px;
 }
 
 /* Menu Section */
 .menu {
     padding: 4rem 2rem;
     background: linear-gradient(135deg, var(--accent-color) 0%, rgba(245, 235, 224, 0.7) 100%);
+}
+
+.menu h2 {
+    padding-bottom: 1.5rem;
 }
 
 .menu-grid {
@@ -160,6 +193,10 @@ h2 {
 .contact {
     padding: 4rem 2rem;
     background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+.contact h2 {
+    padding-bottom: 1.5rem;
 }
 
 .contact-info {
