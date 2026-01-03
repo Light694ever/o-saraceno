@@ -353,27 +353,53 @@ body {
 
 @media (max-width: 768px) {
     .footer {
-        padding: 4rem 1.5rem 1.5rem;
+        padding: 3rem 1.5rem 1.5rem;
         margin-top: 4rem;
+    }
+
+    .footer::before {
+        display: none;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
+    }
+
+    .footer-section {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
     }
 
     .footer-section h4 {
-        font-size: 0.8rem;
-        margin-bottom: 1.2rem;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--accent-color);
     }
 
     .footer-section p {
         font-size: 0.9rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.7rem;
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .footer-section ul {
+        gap: 0.6rem;
+    }
+
+    .footer-section ul li a {
+        font-size: 0.9rem;
     }
 
     .footer-socials {
         gap: 0.8rem;
+        margin-top: 0.8rem;
     }
 
     .footer-social-btn {
@@ -385,30 +411,53 @@ body {
 
 @media (max-width: 480px) {
     .footer {
-        padding: 3rem 1rem 1rem;
+        padding: 2rem 1rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .footer::before {
+        display: none;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-section {
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-section:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
     }
 
     .footer-section h4 {
         font-size: 0.75rem;
-        letter-spacing: 1px;
-        margin-bottom: 1rem;
+        letter-spacing: 0.8px;
+        margin-bottom: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     .footer-section p {
-        font-size: 0.85rem;
-        line-height: 1.6;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
     }
 
     .footer-section ul {
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .footer-section ul li a {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .footer-socials {
-        gap: 0.5rem;
+        gap: 0.6rem;
+        margin-top: 0.6rem;
     }
 
     .footer-social-btn {
@@ -418,8 +467,13 @@ body {
     }
 
     .footer-bottom {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .vat-info {
         font-size: 0.8rem;
+        margin-top: 0.8rem !important;
     }
 }
 
