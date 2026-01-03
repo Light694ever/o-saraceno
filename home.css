@@ -2,13 +2,13 @@
 .hero {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/hero.jpg') center/cover no-repeat;
     color: white;
-    padding: 8rem 2rem 6rem;
+    padding: 6rem 2rem;
     text-align: center;
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    margin-top: 0;
 }
 
 .hero-content h1 {
