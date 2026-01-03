@@ -18,6 +18,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     background-color: #FAFAF8;
+    position: relative;
 }
 
 .container {
@@ -28,11 +29,15 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(27, 73, 101, 0.1);
-    position: sticky;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 8px rgba(27, 73, 101, 0.05);
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
+    width: 100%;
 }
 
 .navbar-content {
